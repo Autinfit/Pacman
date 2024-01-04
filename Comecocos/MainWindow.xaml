@@ -10,5 +10,10 @@
 
         <Label FontSize="20" Name="txtScore" Foreground="Yellow" Content="Puntuación: 0" />
 
+        <Rectangle Name="pacman" Width="30" Height="30" Fill="Yellow" Canvas.Left="50" Canvas.Top="104" />
+        <Rectangle Name="redGuy" Tag="ghost" Width="30" Height="30" Fill="Red" Canvas.Left="173" Canvas.Top="29" />
+        <Rectangle Name="orangeGuy" Tag="ghost" Width="30" Height="30" Fill="Orange" Canvas.Left="651" Canvas.Top="104" />
+        <Rectangle Name="pinkGuy" Tag="ghost" Width="30" Height="30" Fill="Pink" Canvas.Left="173" Canvas.Top="404" />
+
     </Canvas>
 </Window>
