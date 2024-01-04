@@ -14,10 +14,10 @@
 
 ### Objetivos específicos de esta lección:
 
-Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#.
-Mover a este personaje (PACMAN) en una dirección a la vez.
-Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones.
-Recoger todas las monedas en el juego.
-Chocar con fantasmas.
-Animar fantasmas que van de izquierda a derecha dentro del bucle del juego.
-Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas.
+- Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#.
+- Mover a este personaje (PACMAN) en una dirección a la vez.
+- Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones.
+- Recoger todas las monedas en el juego.
+- Chocar con fantasmas.
+- Animar fantasmas que van de izquierda a derecha dentro del bucle del juego.
+- Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas.
