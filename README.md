@@ -16,7 +16,7 @@
 
 ### Objetivos específicos de esta lección:
 
-- Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#.
+- _Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#._
 - Mover a este personaje (PACMAN) en una dirección a la vez.
 - Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones.
 - Recoger todas las monedas en el juego.
