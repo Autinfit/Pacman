@@ -18,7 +18,7 @@
 
 - _Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#._
 - _Mover a este personaje (PACMAN) en una dirección a la vez._
-- Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones.
+- _Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones._
 - Recoger todas las monedas en el juego.
 - Chocar con fantasmas.
 - Animar fantasmas que van de izquierda a derecha dentro del bucle del juego.
