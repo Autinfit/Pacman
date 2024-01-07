@@ -20,6 +20,6 @@
 - _Mover a este personaje (PACMAN) en una dirección a la vez._
 - _Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones._
 - _Recoger todas las monedas en el juego._
-- Chocar con fantasmas.
+- _Chocar con fantasmas._
 - Animar fantasmas que van de izquierda a derecha dentro del bucle del juego.
 - Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas.
