@@ -21,5 +21,5 @@
 - _Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones._
 - _Recoger todas las monedas en el juego._
 - _Chocar con fantasmas._
-- Animar fantasmas que van de izquierda a derecha dentro del bucle del juego.
+- _Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._
 - Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas.
