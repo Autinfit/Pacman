@@ -22,4 +22,4 @@
 - _Recoger todas las monedas en el juego._
 - _Chocar con fantasmas._
 - _Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._
-- Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas.
+- _Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas._
