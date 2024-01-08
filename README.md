@@ -25,3 +25,5 @@
 - _Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas._
 
 _**ESPERO QUE LES SIRVA DE AYUDA!!!!**_
+
+Kind regards!
