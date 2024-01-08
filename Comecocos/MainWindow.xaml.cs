@@ -42,6 +42,8 @@ namespace Comecocos
         public MainWindow()
         {
             InitializeComponent();
+
+            SetUp(); // LLAMADO DEL MÉTODO PARA IMPORTAR TODO DESDE UN ALGORITMO YA REALIZADO.
         }
 
         private void CanvasKeyDown(object sender, KeyEventArgs e)
