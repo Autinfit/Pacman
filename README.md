@@ -23,3 +23,5 @@
 - _Chocar con fantasmas._
 - _Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._
 - _Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas._
+
+**ESPERO QUE LES SIRVA DE AYUDA!!!!**
