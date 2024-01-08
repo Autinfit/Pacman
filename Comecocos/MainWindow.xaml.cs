@@ -144,6 +144,66 @@ namespace Comecocos
         {
             // MÉTODO DE COMPILACIÓN DE LA INTERFAZ DEL JUEGO EN WPF.
 
+            txtScore.Content = "Puntuación: " + puntuacion; // EL CONTENIDO DEL TEXTO SE MOSTRARÁ EN LA VENTANA DE JUEGO EN WPF.
+
+            // SE INICIALIZA EL PROGRAMA MOVIENDO AL PERSONAJE EN DISTINTAS DIRECCIONES.
+
+            if (derechaTrue) // SI EL PERSONAJE VA HACIA LA DERECHA.
+            {
+                Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) + velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE.
+            }
+
+            if (izquierdaTrue) // SI EL PERSONAJE VA HACIA LA IZQUIERDA.
+            {
+                Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) - velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE PERO DE LO CONTRARIO HACIA AL OTRO LADO.
+            }
+
+            if (arribaTrue) // SI EL PERSONAJE VA HACIA ARRIBA.
+            {
+                Canvas.SetTop(pacman, Canvas.GetTop(pacman) - velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE PERO DE LO CONTRARIO HACIA AL OTRO LADO.
+            }
+
+            if (abajoTrue) // SI EL PERSONAJE VA HACIA ABAJO.
+            {
+                Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) + velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE.
+            }
+
+            // FIN DE LOS MOVIMIENTOS DEL PERSONAJE.
+
+            // INICIALMENTE, ESTE PERSONAJE VA A QUEDAR PARADO, PERO SIN MOVERSE POR NINGÚN MOTIVO.
+
+            if (abajoTrue && Canvas.GetTop(pacman) + 80 > Application.Current.MainWindow.Height)
+            {
+                // Si este personaje se está moviendo hacia abajo, la posición de éste es mayor que la altura de la ventana principal, entonces detén el movimiento hacia abajo.
+
+                abajoFalse = true;
+                abajoTrue = false;
+            }
+
+            if (arribaTrue && Canvas.GetTop(pacman) < 1)
+            {
+                // Si este personaje se está moviendo y la posición de éste es menor que 1 entonces se detendrá el movimiento hacia arriba.
+
+                arribaFalse = true;
+                arribaTrue = false;
+            }
+
+            if (izquierdaTrue && Canvas.GetLeft(pacman) - 10 < 1)
+            {
+                // Si este personaje se está moviendo hacia la izquierda y la posición de éste es menor que 1 entonces se detendrá el movimiento hacia la izquierda.
+
+                arribaFalse = true;
+                arribaTrue = false;
+            }
+
+            if (derechaTrue && Canvas.GetLeft(pacman) + 70 > Application.Current.MainWindow.Width)
+            {
+                // Si este personaje se está moviendo hacia la derecha, la posición de éste es mayor que el ancho de la ventana principal, entonces detén el movimiento hacia la derecha.
+
+                derechaFalse = true;
+                derechaTrue = false;
+            }
+
             // EN INSTANTES...
         }
     }
