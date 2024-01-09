@@ -206,5 +206,22 @@ namespace Comecocos
 
             // EN INSTANTES...
         }
+
+        // MÉTODO PARA FINALIZAR LA PARTIDA.
+
+        private void GameOver(string mensaje)
+        {
+            // DENTRO DE ESTA FUNCIÓN, SE DESPLEGARÁ UN MENSAJE DICIENDO QUE FINALIZA LA PARTIDA.
+
+            temporizador.Stop(); // PARALIZA EL TEMPORIZADOR.
+            MessageBox.Show(mensaje, "PACMAN"); // MENSAJE AL FINALIZAR LA PARTIDA.
+
+            // CUANDO EL JUGADOR CLIQUEA EL BOTÓN "ok" EN LA CAJA DE MENSAJE.
+
+            // REINICIA LA APLICACIÓN.
+
+            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location); // REALIZA EL PROCESO DE CERRAR LA APLICACIÓN.
+            Application.Current.Shutdown(); // CIERRA EL PROGRAMA O LA APLICACIÓN.
+        }
     }
 }
