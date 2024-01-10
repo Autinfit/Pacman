@@ -204,7 +204,61 @@ namespace Comecocos
                 derechaTrue = false;
             }
 
-            // EN INSTANTES...
+            // SI ES QUE EL PERSONAJE DETECTA COLISIÓN CON CUALQUIER OBSTÁCULO DEL JUEGO...
+
+            pacmanColision = new Rect(Canvas.GetLeft(pacman), Canvas.GetTop(pacman), pacman.Width, pacman.Height);
+
+            // ALGORITMO SENCILLO MEDIANTE LA ITERACIÓN "foreach" PARA DETECTAR COLISIONES CON EL RECTÁNGULO YA CREADO ANTERIORMENTE.
+
+            foreach(var x in MyCanvas.Children.OfType<Rectangle>())
+            {
+                // CREAREMOS OTROS RECTÁNGULOS DISTINTOS DEL PERSONAJE PARA DETECTAR COLISIONES CON EL MISMO MENCIONADO ANTERIORMENTE.
+
+                Rect colisiones = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+
+                // SI ES QUE ENCUENTRA ALGUNA PARED DEL JUEGO MEDIANTE UNA ETIQUETA YA MENCIONADA EN EL WPF SE DETECTARÁ AHÍ MISMO CON EL PERSONAJE.
+
+                if((string)x.Tag == "wall")
+                {
+                    // EL PERSONAJE QUE MOVERÁ HACIA LA IZQUIERDA DETECTARÁ COLISIONES CON LA PARED.
+
+                    if (izquierdaTrue == true && pacmanColision.IntersectsWith(colisiones))
+                    {
+                        Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) + 10);
+                        izquierdaFalse = true;
+                        izquierdaTrue = false;
+                    }
+
+                    // EL PERSONAJE QUE MOVERÁ HACIA LA DERECHA DETECTARÁ COLISIONES CON LA PARED.
+
+                    if (derechaTrue == true && pacmanColision.IntersectsWith(colisiones))
+                    {
+                        Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) - 10);
+                        derechaFalse = true;
+                        derechaTrue = false;
+                    }
+
+                    // EL PERSONAJE QUE MOVERÁ HACIA ABAJO DETECTARÁ COLISIONES CON LA PARED.
+
+                    if (abajoTrue == true && pacmanColision.IntersectsWith(colisiones))
+                    {
+                        Canvas.SetTop(pacman, Canvas.GetTop(pacman) - 10);
+                        abajoFalse = true;
+                        abajoTrue = false;
+                    }
+
+                    // EL PERSONAJE QUE MOVERÁ HACIA LA ARRIBA DETECTARÁ COLISIONES CON LA PARED.
+
+                    if (arribaTrue == true && pacmanColision.IntersectsWith(colisiones))
+                    {
+                        Canvas.SetTop(pacman, Canvas.GetTop(pacman) + 10);
+                        arribaFalse = true;
+                        arribaTrue = false;
+                    }
+
+                    // EN INSTANTES...
+                }
+            }
         }
 
         // MÉTODO PARA FINALIZAR LA PARTIDA.
