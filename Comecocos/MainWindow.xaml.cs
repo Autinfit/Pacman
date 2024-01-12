@@ -256,7 +256,23 @@ namespace Comecocos
                         arribaTrue = false;
                     }
 
-                    // EN INSTANTES...
+                    // ANALIZA SI ES QUE HAY RECTÁNGULOS QUE TIENEN ETIQUETADOS COMO MONEDAS DEL JUEGO AL DETECTAR COLISIONES.
+
+                    if ((string) x.Tag == "coin")
+                    {
+                        // SI DENTRO DE ESTA CONDICIÓN COLISIONA CON UNA DE LAS MONEDAS DEL JUEGO, ENTONCES HABRÍA VISIBILIDAD.
+
+                        if (pacmanColision.IntersectsWith(colisiones) && x.Visibility == Visibility.Visible)
+                        {
+                            // CAMBIARÁ A CADA MONEDA COMO OCULTA.
+
+                            x.Visibility = Visibility.Hidden;
+
+                            // AÑADE A 1 LA PUNTUACIÓN.
+
+                            puntuacion++;
+                        }
+                    }
                 }
             }
         }
