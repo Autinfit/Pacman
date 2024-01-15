@@ -273,6 +273,53 @@ namespace Comecocos
                             puntuacion++;
                         }
                     }
+
+                    // SI ES UN FANTASMA SEGÚN LA ETIQUETA DEL WPF...
+
+                    if ((string) x.Tag == "ghost")
+                    {
+                        // DETECTA COLISIONES DEL PERSONAJE CON EL FANTASMA SI ES QUE SE CUMPLE CON ESTA CONDICIÓN.
+
+                        if (pacmanColision.IntersectsWith(colisiones))
+                        {
+                            // EL PERSONAJE COLISIONÓ CON CUALQUIER FANTASMA DEL JUEGO LLAMANDO A LA FUNCIÓN DE FINALIZAR UNA PARTIDA.
+
+                            GameOver("BASTA PIRAÑA, RENUNCIA AHORA YA!!!!!!!!");
+                        }
+
+                        // SUPONGA A CLYDE COMO UN FANTASMA DE PRUEBA.
+
+                        if (x.Name.ToString() == "orangeGuy")
+                        {
+                            // MUEVE UN RECTÁNGULO DE MANERA HORIZONTAL HACIA LA IZQUIERDA EN LA PANTALLA DEL JUEGO.
+
+                            Canvas.SetLeft(x, Canvas.GetLeft(x) - velocidadFantasma);
+                        }
+
+                        else
+                        {
+                            // EN CASO CONTRARIO LO HACE AL REVÉS (HACIA LA DERECHA).
+
+                            Canvas.SetLeft(x, Canvas.GetLeft(x) + velocidadFantasma);
+                        }
+
+                        // REDUCE A 1 EL NÚMERO DE PASOS DEL FANTASMA.
+
+                        movimientosActualesFantasma--;
+
+                        // SI EL LÍMITE DE MOVIMIENTOS ACTUALES DEL FANTASMA ES MENOR QUE 1...
+
+                        if (movimientosActualesFantasma < 1)
+                        {
+                            // REINICIA EL NÚMERO ACTUAL DE MOVIMIENTOS DEL FANTASMA
+
+                            movimientosActualesFantasma = limiteMovimientosFantasma;
+
+                            // INVIERTE LA VELOCIDAD DE MOVIMIENTOS DEL FANTASMA.
+
+                            velocidadFantasma = -velocidadFantasma;
+                        }
+                    }
                 }
             }
         }
