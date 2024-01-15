@@ -124,19 +124,19 @@ namespace Comecocos
             // FINALMENTE, REALIZAREMOS LAS ÚLTIMAS CONFIGURACIONES A LOS PERSONAJES DEL JUEGO.
 
             ImageBrush pacmanImage = new ImageBrush(); // EDITAREMOS AL PACMAN.
-            pacmanImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/pacman.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO AMARILLO A ESTE PERSONAJE.
+            pacmanImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Imagenes/pacman.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO AMARILLO A ESTE PERSONAJE.
             pacman.Fill = pacmanImage; // LO COLOREAMOS A ESTE PERSONAJE EN EL RECTÁNGULO CORRESPONDIENTE TAL CUÁL COMO SE HABÍA DECLARADO EN ESTA SECCIÓN.
 
             ImageBrush blinky = new ImageBrush(); // EDITAREMOS A BLINKY, EL FANTASMA ROJO.
-            blinky.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/red.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO ROJO A ESTE PERSONAJE.
+            blinky.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Imagenes/red.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO ROJO A ESTE PERSONAJE.
             redGuy.Fill = blinky; // LO COLOREAMOS A ESTE PERSONAJE EN EL RECTÁNGULO CORRESPONDIENTE TAL CUÁL COMO SE HABÍA DECLARADO EN ESTA SECCIÓN.
 
             ImageBrush clyde = new ImageBrush(); // EDITAREMOS A CLYDE, EL FANTASMA NARANJA.
-            clyde.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/orange.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO NARANJO A ESTE PERSONAJE.
+            clyde.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Imagenes/orange.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO NARANJO A ESTE PERSONAJE.
             orangeGuy.Fill = clyde; // LO COLOREAMOS A ESTE PERSONAJE EN EL RECTÁNGULO CORRESPONDIENTE TAL CUÁL COMO SE HABÍA DECLARADO EN ESTA SECCIÓN.
 
             ImageBrush pinky = new ImageBrush(); // EDITAREMOS A PINKY EL FANTASMA ROSADO.
-            pinky.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/pink.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO AMARILLO A ESTE PERSONAJE.
+            pinky.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Imagenes/pink.jpg")); // LO VAMOS A IMPORTAR EN EL RECTÁNGULO AMARILLO A ESTE PERSONAJE.
             pinkGuy.Fill = pinky; // LO COLOREAMOS A ESTE PERSONAJE EN EL RECTÁNGULO CORRESPONDIENTE TAL CUÁL COMO SE HABÍA DECLARADO EN ESTA SECCIÓN.
         }
 
@@ -192,8 +192,8 @@ namespace Comecocos
             {
                 // Si este personaje se está moviendo hacia la izquierda y la posición de éste es menor que 1 entonces se detendrá el movimiento hacia la izquierda.
 
-                arribaFalse = true;
-                arribaTrue = false;
+                izquierdaFalse = true;
+                izquierdaTrue = false;
             }
 
             if (derechaTrue && Canvas.GetLeft(pacman) + 70 > Application.Current.MainWindow.Width)
@@ -320,6 +320,15 @@ namespace Comecocos
                             velocidadFantasma = -velocidadFantasma;
                         }
                     }
+                }
+
+                // SI EL JUGADOR OBTUVO TODAS LAS MONEDAS EN TOTAL DEL JUEGO...
+
+                if (puntuacion == 85)
+                {
+                    // MUESTRA UN MENSAJE DE ÉXITO MEDIANTE MÉTODO DE FINALIZACIÓN DE LA PARTIDA.
+
+                    GameOver("HAS GANADO LA PARTIDA, PRESIONA 'OK' PARA CONTINUAR!!!!!");
                 }
             }
         }
