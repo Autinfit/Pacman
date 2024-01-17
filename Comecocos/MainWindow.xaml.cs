@@ -165,7 +165,7 @@ namespace Comecocos
 
             if (abajoTrue) // SI EL PERSONAJE VA HACIA ABAJO.
             {
-                Canvas.SetLeft(pacman, Canvas.GetLeft(pacman) + velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE.
+                Canvas.SetTop(pacman, Canvas.GetTop(pacman) + velocidad); // AÑADE SU VELOCIDAD YA DECLARADO EN UNA VARIABLE ANTERIORMENTE.
             }
 
             // FIN DE LOS MOVIMIENTOS DEL PERSONAJE.
