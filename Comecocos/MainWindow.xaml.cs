@@ -218,7 +218,7 @@ namespace Comecocos
 
                 // SI ES QUE ENCUENTRA ALGUNA PARED DEL JUEGO MEDIANTE UNA ETIQUETA YA MENCIONADA EN EL WPF SE DETECTARÁ AHÍ MISMO CON EL PERSONAJE.
 
-                if((string)x.Tag == "wall")
+                if ((string)x.Tag == "wall")
                 {
                     // EL PERSONAJE QUE MOVERÁ HACIA LA IZQUIERDA DETECTARÁ COLISIONES CON LA PARED.
 
@@ -255,70 +255,76 @@ namespace Comecocos
                         arribaFalse = true;
                         arribaTrue = false;
                     }
+                }
+                
+                // ANALIZA SI ES QUE HAY RECTÁNGULOS QUE TIENEN ETIQUETADOS COMO MONEDAS DEL JUEGO AL DETECTAR COLISIONES.
 
-                    // ANALIZA SI ES QUE HAY RECTÁNGULOS QUE TIENEN ETIQUETADOS COMO MONEDAS DEL JUEGO AL DETECTAR COLISIONES.
+                if ((string) x.Tag == "coin")
+                {
+                      
+                    // SI DENTRO DE ESTA CONDICIÓN COLISIONA CON UNA DE LAS MONEDAS DEL JUEGO, ENTONCES HABRÍA VISIBILIDAD.
 
-                    if ((string) x.Tag == "coin")
+                    if (pacmanColision.IntersectsWith(colisiones) && x.Visibility == Visibility.Visible)
                     {
-                        // SI DENTRO DE ESTA CONDICIÓN COLISIONA CON UNA DE LAS MONEDAS DEL JUEGO, ENTONCES HABRÍA VISIBILIDAD.
+                            
+                        // CAMBIARÁ A CADA MONEDA COMO OCULTA.
 
-                        if (pacmanColision.IntersectsWith(colisiones) && x.Visibility == Visibility.Visible)
-                        {
-                            // CAMBIARÁ A CADA MONEDA COMO OCULTA.
+                        x.Visibility = Visibility.Hidden;
 
-                            x.Visibility = Visibility.Hidden;
+                        // AÑADE A 1 LA PUNTUACIÓN.
 
-                            // AÑADE A 1 LA PUNTUACIÓN.
+                        puntuacion++;
+                    }
+                }
 
-                            puntuacion++;
-                        }
+                // SI ES UN FANTASMA SEGÚN LA ETIQUETA DEL WPF...
+
+                if ((string) x.Tag == "ghost")
+                {
+                    
+                    // DETECTA COLISIONES DEL PERSONAJE CON EL FANTASMA SI ES QUE SE CUMPLE CON ESTA CONDICIÓN.
+
+                    if (pacmanColision.IntersectsWith(colisiones))
+                    {
+                            
+                        // EL PERSONAJE COLISIONÓ CON CUALQUIER FANTASMA DEL JUEGO LLAMANDO A LA FUNCIÓN DE FINALIZAR UNA PARTIDA.
+
+                        GameOver("BASTA PIRAÑA, RENUNCIA AHORA YA!!!!!!!!");
                     }
 
-                    // SI ES UN FANTASMA SEGÚN LA ETIQUETA DEL WPF...
+                    // SUPONGA A CLYDE COMO UN FANTASMA DE PRUEBA.
 
-                    if ((string) x.Tag == "ghost")
+                    if (x.Name.ToString() == "redGuy")
                     {
-                        // DETECTA COLISIONES DEL PERSONAJE CON EL FANTASMA SI ES QUE SE CUMPLE CON ESTA CONDICIÓN.
+                            
+                         // MUEVE UN RECTÁNGULO DE MANERA HORIZONTAL HACIA LA IZQUIERDA EN LA PANTALLA DEL JUEGO.
 
-                        if (pacmanColision.IntersectsWith(colisiones))
-                        {
-                            // EL PERSONAJE COLISIONÓ CON CUALQUIER FANTASMA DEL JUEGO LLAMANDO A LA FUNCIÓN DE FINALIZAR UNA PARTIDA.
+                         Canvas.SetLeft(x, Canvas.GetLeft(x) - velocidadFantasma);
+                    }
 
-                            GameOver("BASTA PIRAÑA, RENUNCIA AHORA YA!!!!!!!!");
-                        }
+                    else
+                    {
+                         // EN CASO CONTRARIO LO HACE AL REVÉS (HACIA LA DERECHA).
 
-                        // SUPONGA A CLYDE COMO UN FANTASMA DE PRUEBA.
+                         Canvas.SetLeft(x, Canvas.GetLeft(x) + velocidadFantasma);
+                    }
 
-                        if (x.Name.ToString() == "orangeGuy")
-                        {
-                            // MUEVE UN RECTÁNGULO DE MANERA HORIZONTAL HACIA LA IZQUIERDA EN LA PANTALLA DEL JUEGO.
+                    // REDUCE A 1 EL NÚMERO DE PASOS DEL FANTASMA.
 
-                            Canvas.SetLeft(x, Canvas.GetLeft(x) - velocidadFantasma);
-                        }
+                    movimientosActualesFantasma--;
 
-                        else
-                        {
-                            // EN CASO CONTRARIO LO HACE AL REVÉS (HACIA LA DERECHA).
+                    // SI EL LÍMITE DE MOVIMIENTOS ACTUALES DEL FANTASMA ES MENOR QUE 1...
 
-                            Canvas.SetLeft(x, Canvas.GetLeft(x) + velocidadFantasma);
-                        }
+                    if (movimientosActualesFantasma < 1)
+                    {
+                            
+                        // REINICIA EL NÚMERO ACTUAL DE MOVIMIENTOS DEL FANTASMA
 
-                        // REDUCE A 1 EL NÚMERO DE PASOS DEL FANTASMA.
+                        movimientosActualesFantasma = limiteMovimientosFantasma;
 
-                        movimientosActualesFantasma--;
+                        // INVIERTE LA VELOCIDAD DE MOVIMIENTOS DEL FANTASMA.
 
-                        // SI EL LÍMITE DE MOVIMIENTOS ACTUALES DEL FANTASMA ES MENOR QUE 1...
-
-                        if (movimientosActualesFantasma < 1)
-                        {
-                            // REINICIA EL NÚMERO ACTUAL DE MOVIMIENTOS DEL FANTASMA
-
-                            movimientosActualesFantasma = limiteMovimientosFantasma;
-
-                            // INVIERTE LA VELOCIDAD DE MOVIMIENTOS DEL FANTASMA.
-
-                            velocidadFantasma = -velocidadFantasma;
-                        }
+                        velocidadFantasma = -velocidadFantasma;
                     }
                 }
 
