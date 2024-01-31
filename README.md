@@ -14,7 +14,7 @@
 - Este será un tutorial divertido así que comencemos.
 ```
 
-### Objetivos específicos de esta lección:
+### _Objetivos específicos de esta lección:_
 
 - _Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#._
 - _Mover a este personaje (PACMAN) en una dirección a la vez._
