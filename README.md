@@ -1,4 +1,4 @@
-# Pacman
+# _Pacman_
 
 - **En este tutorial crearemos un divertido juego estilo Pacman en Visual Studio usando algoritmos de programación en WPF y C#.**
 - **Será un juego divertido de hacer dentro de Visual Studio porque usaremos todos los componentes estándar de WPF y no usaremos bibliotecas de terceros para crear este juego.** 
