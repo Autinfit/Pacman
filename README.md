@@ -4,7 +4,7 @@
 - **Ésto será un juego divertido de hacer dentro de Visual Studio porque usaremos todos los componentes estándar de WPF y no usaremos bibliotecas a terceros para poder crear este juego.** 
 - **Usaremos varios rectángulos de edición en el formulario (Interfaz visual a implementar) y también con C# para identificar e interactuar con diferentes personajes a lo largo de este juego.**
 - **Codificaremos de forma personalizada todos los elementos dentro de este juego, incluidos los movimientos de Pac Man, la colisión de paredes, la colisión y movimientos con aquellos fantasmas.** 
-- **El objetivo principal de este juego es recoger todas las monedas que contiene para poder superar el nivel y evitar a los fantasmas.**
+- **El objetivo principal de este juego es recoger todas las monedas que contiene para poder superar el nivel y así evitar a los fantasmas.**
 
 ## _Cómo hacerlo???_
 
