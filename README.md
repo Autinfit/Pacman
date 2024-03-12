@@ -1,4 +1,4 @@
-# _Pacman_
+# Pacman
 
 - **_In this tutorial we will create a fun game called Pacman in Visual Studio using programming algorithms in WPF and C#._**
 
