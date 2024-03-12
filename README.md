@@ -4,7 +4,7 @@
 - **_This will be a fun game to make within Visual Studio because we will use all the standard WPF components and we will not use third-party libraries to create this game._**
 - **_We will use several editing rectangles in the form (Visual Interface to be implemented) and also with C# to identify and interact with different characters throughout this game._**
 - **_We will custom code all elements within this game, including Pac Man's movements, wall collision, collision and movements with those ghosts._**
-- The main objective of this game is to collect all the coins it contains in order to beat the level and thus avoid the ghosts so as not to end the game.
+- _The main objective of this game is to collect all the coins it contains in order to beat the level and thus avoid the ghosts so as not to end the game._
 
 **_Traducido del español:_**
 
