@@ -12,7 +12,7 @@
 - We will create solid walls inside this game so that it cannot pass through the 4 directions, so if the player moves to the left and hits the wall then it stops, if the player moves to the right and hits the wall, stop and so on.
 - We will also program the collision between the coins and the ghosts.
 - This will be a fun tutorial so, LET'S GET STARTED!!!!.
-
+```
 **_Traducido del español:_**
 
 - **En este tutorial crearemos un divertido juego llamado Pacman en Visual Studio usando algoritmos de programación en WPF y C#.**
