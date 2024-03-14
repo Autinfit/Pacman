@@ -6,6 +6,9 @@
 - **_We will custom code all elements within this game, including Pac Man's movements, wall collision, collision and movements with those ghosts._**
 - **_The main objective of this game is to collect all the coins it contains in order to beat the level and thus avoid the ghosts so as not to end the game._**
 
+
+how to do it?
+
 **_Traducido del español:_**
 
 - **En este tutorial crearemos un divertido juego llamado Pacman en Visual Studio usando algoritmos de programación en WPF y C#.**
