@@ -7,7 +7,7 @@
 - **_The main objective of this game is to collect all the coins it contains in order to beat the level and thus avoid the ghosts so as not to end the game._**
 
 
-## how to do it?
+## How to do it?
 
 **_Traducido del español:_**
 
