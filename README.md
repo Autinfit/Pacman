@@ -22,7 +22,7 @@
 - _Collect all coins in the game._
 - _Prevent the character from colliding with ghosts._
 - _Animate ghosts going from left to right within the game loop._
-- Restart the game when the player collides with the ghosts or collects all the coins.
+- _Restart the game when the player collides with the ghosts or collects all the coins._
 
 **_Traducido del español:_**
 
