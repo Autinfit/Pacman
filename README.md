@@ -17,7 +17,7 @@
 ### _Specific objectives of this lesson:_
 
 - _Create a simple PAC Man game in Visual Studio using WPF and C#._
-- Move this character (PACMAN) in one direction at a time.
+- _Move this character (PACMAN) in one direction at a time._
 
 **_Traducido del español:_**
 
