@@ -13,6 +13,9 @@
 - We will also program the collision between the coins and the ghosts.
 - This will be a fun tutorial so, LET'S GET STARTED!!!!.
 ```
+
+Specific objectives of this lesson:
+
 **_Traducido del español:_**
 
 - **En este tutorial crearemos un divertido juego llamado Pacman en Visual Studio usando algoritmos de programación en WPF y C#.**
