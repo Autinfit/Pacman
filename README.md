@@ -20,7 +20,7 @@
 - _Move this character (PACMAN) in one direction at a time._
 - _Prevent the Pac Man character from going through the walls in all 4 directions._
 - _Collect all coins in the game._
-- Prevent the character from colliding with ghosts.
+- _Prevent the character from colliding with ghosts._
 
 **_Traducido del español:_**
 
