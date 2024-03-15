@@ -21,6 +21,7 @@
 - _Prevent the Pac Man character from going through the walls in all 4 directions._
 - _Collect all coins in the game._
 - _Prevent the character from colliding with ghosts._
+- Animate ghosts going from left to right within the game loop.
 
 **_Traducido del español:_**
 
