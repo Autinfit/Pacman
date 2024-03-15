@@ -16,7 +16,7 @@
 
 ### _Specific objectives of this lesson:_
 
-Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#.
+- Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#.
 
 **_Traducido del español:_**
 
