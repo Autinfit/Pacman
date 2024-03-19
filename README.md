@@ -55,6 +55,4 @@ _**ESPERO QUE ESTO LES SIRVA DE AYUDA!!!!**_
 _**Kind regards!**_
 
 **AutinFit**
-
 ![image](https://github.com/Autinfit/Pacman/assets/155406623/b86a4608-5ab6-43b7-951b-09d46b9f7588)
-
