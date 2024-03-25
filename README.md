@@ -56,7 +56,7 @@
 - **_Evitar que el personaje de Pac Man atraviese las paredes en las 4 direcciones._**
 - **_Recoger todas las monedas en el juego._**
 - **_Evitar que el personaje choque con fantasmas._**
-- _Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._
+- **_Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._**
 
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/6abf3537-738a-48f4-95e9-08dd1dca7a95)
