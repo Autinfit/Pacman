@@ -18,7 +18,7 @@
 
 - **_Create a simple PAC Man game in Visual Studio using WPF and C#._**
 - **_Move this character (PACMAN) in one direction at a time._**
-- _Prevent the Pac Man character from going through the walls in all 4 directions._
+- **_Prevent the Pac Man character from going through the walls in all 4 directions._**
 - _Collect all coins in the game._
 - _Prevent the character from colliding with ghosts._
 - _Animate ghosts going from left to right within the game loop._
