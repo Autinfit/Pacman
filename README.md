@@ -31,7 +31,7 @@
 
 
 
-- _Restart the game when the player collides with the ghosts or collects all the coins._
+- **_Restart the game when the player collides with the ghosts or collects all the coins._**
 
 **_Traducido del español:_**
 
