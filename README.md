@@ -24,6 +24,8 @@
 - _Animate ghosts going from left to right within the game loop._
 
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
+  ![image](https://github.com/Autinfit/Pacman/assets/155406623/6abf3537-738a-48f4-95e9-08dd1dca7a95)
+
 
 - _Restart the game when the player collides with the ghosts or collects all the coins._
 
