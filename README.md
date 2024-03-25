@@ -57,6 +57,8 @@
 - _Recoger todas las monedas en el juego._
 - _Evitar que el personaje choque con fantasmas._
 - _Animar fantasmas que van de izquierda a derecha dentro del bucle del juego._
+
+  ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
 - _Reiniciar el juego cuando el jugador choque con los fantasmas o recoja todas las monedas._
 
 _**ESPERO QUE ESTO LES SIRVA DE AYUDA!!!!**_
