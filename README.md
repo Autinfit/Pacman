@@ -25,6 +25,8 @@
 
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/6abf3537-738a-48f4-95e9-08dd1dca7a95)
+  ![image](https://github.com/Autinfit/Pacman/assets/155406623/784428bb-cb60-495d-9be7-0533c7f12052)
+
 
 
 - _Restart the game when the player collides with the ghosts or collects all the coins._
