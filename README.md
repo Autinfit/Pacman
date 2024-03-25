@@ -20,7 +20,7 @@
 - **_Move this character (PACMAN) in one direction at a time._**
 - **_Prevent the Pac Man character from going through the walls in all 4 directions._**
 - **_Collect all coins in the game._**
-- _Prevent the character from colliding with ghosts._
+- **_Prevent the character from colliding with ghosts._**
 - _Animate ghosts going from left to right within the game loop._
 
   ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
