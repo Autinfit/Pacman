@@ -22,6 +22,9 @@
 - _Collect all coins in the game._
 - _Prevent the character from colliding with ghosts._
 - _Animate ghosts going from left to right within the game loop._
+
+  ![image](https://github.com/Autinfit/Pacman/assets/155406623/87ac5394-6a7d-40ad-a608-4c0fff58c7bb)
+
 - _Restart the game when the player collides with the ghosts or collects all the coins._
 
 **_Traducido del español:_**
