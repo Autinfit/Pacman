@@ -47,7 +47,6 @@
 - También programaremos la colisión entre las monedas y los fantasmas.
 - Este será un tutorial divertido así que, EMPECEMOS!!!!.
 
-
 ### _Objetivos específicos de esta lección:_
 
 - **_Crear un juego PAC Man sencillo en Visual Studio usando WPF y C#._**
