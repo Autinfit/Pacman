@@ -45,7 +45,7 @@
 
 - _Crearemos paredes sólidas dentro de este juego para que no pueda pasar por las 4 direcciones, por lo que si el jugador se mueve hacia la izquierda y golpea la pared, entonces se detiene, si el jugador se mueve hacia la derecha y golpea la pared, detenerse y así sucesivamente._
 - _También programaremos la colisión entre las monedas y los fantasmas._
-- Este será un tutorial divertido así que, EMPECEMOS!!!!.
+- _Este será un tutorial divertido así que, EMPECEMOS!!!!._
 
 ### _Objetivos específicos de esta lección:_
 
